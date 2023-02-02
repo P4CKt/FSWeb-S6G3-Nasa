@@ -1,11 +1,14 @@
 import React from "react";
 
-const Header=({hTitle})=>{
-    
+const Header=(props)=>{
+    const {hTitle}=props;
     return(
-        <div className="head">
-            <h1>{hTitle}</h1>
-        </div>
+        <header>
+            <div className="head">
+                <img src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"></img>
+                <h1>{hTitle}</h1>
+            </div>
+        </header>
     )
 }
 export default Header;
